@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>NACIONALIDADE</h1>
+    Digite sua nacionalidade: <input type="text" name="txtnc" id="txtnc">
+    <input type="button" value=" Verificar" onclick= "verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var n = window.document.querySelector('input#txtnc')
+            var res = window.document.querySelector('div#res')
+            var pais = (txtnc.value)
+            res.innerHTML = `<p>Seu país é o <strong>${pais}.</strong></p>`
+            if (pais != 'brasil'){
+                res.innerHTML +=`<p> Você é <strong>ESTRANGEIRO.</strong></p>`
+            }else{
+                res.innerHTML += `<p> Você já e de casa<p>`
+            }
+            res.innerHTML += `<p>Seja Bem-Vindo ao Brasil.</p>`
+        }
+    </script>
+</body>
+</html>
