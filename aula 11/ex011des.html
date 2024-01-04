@@ -7,21 +7,22 @@
 </head>
 <body>
     <h1>NACIONALIDADE</h1>
-    Digite sua nacionalidade: <input type="text" name="txtnc" id="txtnc">
+    Digite sua nacionalidade: <input type="text" name="txtnc" id="nc">
     <input type="button" value=" Verificar" onclick= "verificar()">
     <div id="res">
 
     </div>
     <script>
         function verificar() {
-            var n = window.document.querySelector('input#txtnc')
-            var res = window.document.querySelector('div#res')
-            var pais = (txtnc.value)
-            res.innerHTML = `<p>Seu país é o <strong>${pais}.</strong></p>`
+            var n = window.document.querySelector('#nc')
+            var res = window.document.querySelector('#res')
+            var pais = (nc.value)
+            res.innerHTML = `<p>Seu paí
+            s é o <strong>${pais}.</strong></p>`
             if (pais != 'brasil'){
                 res.innerHTML +=`<p> Você é <strong>ESTRANGEIRO.</strong></p>`
             }else{
-                res.innerHTML += `<p> Você já e de casa<p>`
+                res.innerHTML += `<p> Você já é de casa<p>`
             }
             res.innerHTML += `<p>Seja Bem-Vindo ao Brasil.</p>`
         }

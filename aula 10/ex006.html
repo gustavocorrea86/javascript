@@ -13,29 +13,50 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
-
         }
     </style>
 </head>
 <body>
-    <div id = "area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" onmouseup="acima()">
+    <!--<div id = "area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" onmouseup="acima()">
         interaja...
+    </div>-->
+    <div id="area">
+       interaja
     </div>
+    <h1>Somando Valores</h1>
+    <input type="number" name="n1" id="n1">
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resuldado</div>
     <script>
-        var a = window.document.getElementById('area')
+        function somar(){
+            n1 = Number(n1.value)
+            n2= Number (n2.value)
+            var s = n1 + n2
+            res.innerText = `A Soma entre ${n1} e ${n2} é igual a <strong> ${s} </strong>`
+        }
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        area.addEventListener('mouseup', acima )
         function clicar(){
-            a.innerText = 'Olha ai...'
-            a.style.backgroundColor = 'red'
+            area.innerText = 'Clicou!'
+            area.style.backgroundColor = 'red'
         }
         function entrar(){
-            a.innerText = 'entrou!'
+            area.innerText = 'Entrou!'
+            area.style.backgroundColor ='yellow'
+            area.style.color = 'black'
+            area.style.width= '400px'
         }
         function sair(){
-            a.innerText = 'Saiu!'
-            a.style.backgroundColor = 'green'
+            area.innerText = 'Saiu!'
+            area.style.backgroundColor = 'green'
+            area.style.width='200px'
         }
         function acima(){
-            a.innerText = 'Foi...'
+            area.innerText = 'Foi...'
+            area.style.backgroundColor = 'blue'
         }
     </script>
 </body>
