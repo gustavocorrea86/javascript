@@ -23,8 +23,8 @@
         #fundo{
             width: 100vw;
             height: 100vh;
-            background-image: linear-gradient(to top, blue, white);
             position: relative;
+            background-color: lightblue;
             
         }
         h1{
@@ -103,14 +103,14 @@
         <h1>Hora do Dia</h1>
         
         <div id="vhora">
-            <input class="ihora" type="number" name="hora" id="ihora"
-            placeholder="Hora">
+            <input class="ihora" type="number" name="hora" id="ihora" placeholder="Hora">
             <input id="iverificar" type="button" value="Verificar" onclick="verificar()">
             <p id="dia"></p>
         </div>
     </header>
         <div id="quadro">
-            <img id="imagem" src="imagens/manha.jpg" alt="foto do dia">
+           
+            <img id="imagem">
         </div>
     <footer>
     </footer>
@@ -124,15 +124,17 @@
         if (hora >= 0 && hora < 12) {
             img.src = 'imagens/manha.jpg'
             document.body.style.background ='linear-gradient(to top, white, blue)'
-            dia.innerHTML+='Manhã'
+            dia.innerHTML ='Manhã'
         }else if (hora >= 12 && hora < 18){
             img.src = 'imagens/tarde.jpg'
             document.body.style.background ='linear-gradient(to top, white, blue, yellow)'
-            dia.innerHTML+='Tarde'
+            dia.innerHTML ='Tarde'
+           
         }else{
             img.src = 'imagens/noite.jpg'
             document.body.style.background ='linear-gradient(to top, yellow, black, blue)'
-            dia.innerHTML+='Noite'
+            dia.innerHTML ='Noite'
+           
         }
     }
 </script>
