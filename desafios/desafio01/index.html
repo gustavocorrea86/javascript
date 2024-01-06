@@ -12,8 +12,10 @@
         <h1>Hora do Dia</h1>
         
         <div id="vhora">
-            <input class="ihora" type="number" name="hora" id="ihora" placeholder="Hora">
-            <input id="iverificar" type="button" value="Verificar" onclick="verificar()">
+            <form action="">
+                <input class="ihora" type="number" name="hora" id="ihora" placeholder="Hora" required min="0" max="23" minlength="1" maxlength="2">
+                <input id="iverificar" value="Verificar"  onclick="verificar()">
+            </form>
             <p id="dia"></p>
         </div>
     </header>
