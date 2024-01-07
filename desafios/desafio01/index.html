@@ -13,8 +13,8 @@
         
         <div id="vhora">
             <form action="">
-                <input class="ihora" type="number" name="hora" id="ihora" placeholder="Hora" required min="0" max="23" minlength="1" maxlength="2">
-                <input id="iverificar" value="Verificar"  onclick="verificar()">
+                <input class="ihora" type="number" name="hora" id="ihora" placeholder=" Hora" required min="0" max="23" minlength="1" maxlength="2">
+                <input id="iverificar" value=" Verificar"  onclick="verificar()">
             </form>
             <p id="dia"></p>
         </div>
@@ -32,17 +32,22 @@
         var img = document.getElementById('imagem')
         var hora = document.getElementById('ihora')
         var dia = document.querySelector('#dia')
+        var quadro = document.querySelector('#quadro')
         hora = Number(hora.value)
-        if (hora >= 0 && hora < 12) {
+        if(hora == 0 || hora > 24){
+            window.alert('[ERRO] Verifique o valor digitado')
+        }else if (hora >= 0 && hora < 12) {
+            quadro.style.display = 'block'
             img.src = 'imagens/manha.jpg'
             document.body.style.background ='linear-gradient(to top, white, blue)'
             dia.innerHTML ='Manhã'
         }else if (hora >= 12 && hora < 18){
+            quadro.style.display = 'block'
             img.src = 'imagens/tarde.jpg'
             document.body.style.background ='linear-gradient(to top, white, blue, yellow)'
             dia.innerHTML ='Tarde'
-           
         }else{
+            quadro.style.display = 'block'
             img.src = 'imagens/noite.jpg'
             document.body.style.background ='linear-gradient(to top, yellow, black, blue)'
             dia.innerHTML ='Noite'
