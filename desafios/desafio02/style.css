@@ -17,15 +17,15 @@ header h1{
 }
 #formulario{
     display: block;
+    padding: 10px;
     width: 60%;
-    height: 20vh;
+    height: 18vh;
     background-color: lightgrey;
     margin: auto;
     border-radius: 10px;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.507);
     margin-top: 30px;
 }
-   
 #iano{
     width: 120px;
 }
@@ -48,5 +48,6 @@ footer{
     border-radius: 50%;
 }
 #res{
+    display: block;
     text-align: center;
 }
