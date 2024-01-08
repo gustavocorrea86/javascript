@@ -46,8 +46,9 @@ function verificar(){
     }
     
 }
-function limpar(){
+function limpar(){ 
     img.style.display = 'none'
     res.style.display = 'none'
     tela.style.height = '20vh'
+   
 }
