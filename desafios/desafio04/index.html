@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <main>
+        <section>
+            <form action="tabuada.php" method="post">
+                <p id="en">
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero">
+                    <input type="button" value="Gerar Tabuada" onclick="gerar()">
+                </p>
+            </form>
+            <div id="res"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Curso EstudoNauta</p>
+    </footer>
+</body>
+<script>
+    function gerar(){
+        var n1 = document.querySelector('#numero')
+        var res = document.querySelector('#res')
+        n1 = Number(n1.value) 
+        var c = ' '
+        var r = n1 * c
+        if(n1 == 0){
+            window.alert('Digite um número!!!')
+        }else{
+            res.innerHTML = `Tabuada do "${n1}" <br>`
+                for(var c = 0; c <=10; c++){
+                    res.style.display = `block`
+                    r = n1 * c 
+                    res.innerHTML += `${n1} x ${c} = ${r}`
+                    res.innerHTML +=`<br>`
+                }
+        }
+    }
+</script>
+</html>
