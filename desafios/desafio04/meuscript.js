@@ -14,5 +14,8 @@ function gerar(){
                 res.innerHTML += `${n1} x ${c} = ${r}`
                 res.innerHTML +=`<br>`
             }
+            var cor = 0
+            
     }
+    
 }
