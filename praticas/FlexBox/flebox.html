@@ -8,10 +8,13 @@
         *{
             margin: 0px;
             padding: 0px;
-            
+            text-decoration: none;
             list-style: none;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: white;
+            
+        }
+        body{
+            margin-bottom: 40px;
         }
         .header{
             padding: 10px;
@@ -24,7 +27,73 @@
             background-color: black;
         }
         a{
-            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: white;
+        }
+        .menu{
+            display: flex;
+        }
+        li{
+            margin-left: 10px;
+            background-color: cadetblue;
+            align-items: center;
+            text-align: center;
+            width: 80px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 20px;
+           
+        }
+        img{
+            max-width: 100%;
+            display: block;
+        }
+        /* Flexbox*/
+        #flex{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #flex > div:nth-child(n + 5){
+        /*#flex > div:nth-child(4){*/
+            background-color: brown;
+        }
+        #flex > div{
+            flex: 200px;
+            margin: 10px;
+        }
+        /* Grid Layout*/
+        #grid1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 780px;
+            margin: 0 auto;
+            grid-gap: 20px;
+            padding: 10px;
+        }
+        /*#grid1 > div:nth-child(3){ 
+             background-color: blue;
+            */
+            #grid1 > div:nth-child(n + 4){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            align-items: center;
+        }
+        #grid1 > div:nth-child(10){
+            background-color: blue;
+        }
+        #grid1 > div#anuncio{
+            grid-column: 1;
+            grid-row: 2 / 5;
+            display: block;
+            margin: auto;
         }
         
     </style>
@@ -40,6 +109,80 @@
             </ul>
         </nav>
     </header>
+    <h1>Section FlexBox</h1>
+    <section id="flex">
+        <div>
+            <img src="lobo1.jpg" alt="Lobo">
+            <p>Lobo 1</p>
+        </div>
+        <div>
+            <img src="lobo2.jpg" alt="Lobo">
+            <p>Lobo 2</p>
+        </div>
+        <div>
+            <img src="lobo3.jpg" alt="Lobo">
+            <p>Lobo 3</p>
+        </div>
+        <div>
+            <img src="lobo4.jpg" alt="Lobo">
+            <p>Lobo 4</p>
+        </div>
+        <div>
+            <img src="lobo5.jpg" alt="Lobo">
+            <p>Lobo 5</p>
+        </div>
+        <div>
+            <img src="lobo6.jpg" alt="Lobo">
+            <p>Lobo 6</p>
+        </div>
+    </section>
+
+    <h1>Section Grid Layout</h1>
+
+    <section id="grid1">
+        <div>
+            <img src="lobo1.jpg" alt="Lobo">
+            <p>Lobo 1</p>
+        </div>
+        <div>
+            <img src="lobo2.jpg" alt="Lobo">
+            <p>Lobo 2</p>
+        </div>
+        <div>
+            <img src="lobo3.jpg" alt="Lobo">
+            <p>Lobo 3</p>
+        </div>
+        <div>
+            <img src="lobo4.jpg" alt="Lobo">
+            <p>Lobo 4</p>
+        </div>
+        <div>
+            <img src="lobo5.jpg" alt="Lobo">
+            <p>Lobo 5</p>
+        </div>
+        <div>
+            <img src="lobo6.jpg" alt="Lobo">
+            <p>Lobo 6</p>
+        </div>
+        <div>
+            <img src="lobo3.jpg" alt="Lobo">
+            <p>Lobo 3</p>
+        </div>
+        <div>
+            <img src="lobo4.jpg" alt="Lobo">
+            <p>Lobo 4</p>
+        </div>
+        <div>
+            <img src="lobo5.jpg" alt="Lobo">
+            <p>Lobo 5</p>
+        </div>
+        <div id="anuncio">
+            <img src="lobo6.jpg" alt="Lobo">
+            <p>Anuncio</p>
+        </div>
+    </section>
+
+
     
 </body>
 </html>
