@@ -26,11 +26,12 @@ section{
 }
 #addnum{
     background-color: white;
-    width:170px;
+    margin-right: 50px;
     border-radius: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-left: 10px;
+    padding: 10px;
+   
 }
 #mostrar{
     margin-top: 10px;

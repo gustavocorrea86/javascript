@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Randômico</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: opx;
+        }
+        header{
+            border: 1px solid black;
+            width: 100vw;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <h1 id="color">Letras Coloridas</h1>
+    <input type="button" value="Clique aqui" id="clique" onclick="BgRandom()">
+</body>
+<script>
+    function BgRandom(){
+        
+    }
+   /*window.addEventListener("load", function(){
+        setInterval(function(){
+            BgRandom();
+        }, 1000);
+    });
+    */
+
+    setInterval(BgRandom, 1000) // com o click
+    function BgRandom(){ 
+        function random(num){
+            return Math.floor(Math.random() * (num + 1));
+        }
+        
+        var rndColor = `rgb(${random(255)}, ${random(255)}, ${random(255)})`
+        document.querySelector('h1#color').style.color = rndColor
+        document.querySelector('header').style.backgroundColor = rndColor;
+    }
+
+    /*
+    function BgColor(){
+            document.body.style.backgroundColor = 'green'
+    }
+    setInterval(BgColor, 1000);
+    */
+</script>
+</html>

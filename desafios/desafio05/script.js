@@ -1,4 +1,4 @@
-let telanum = document.querySelector('#addnum')
+        let telanum = document.querySelector('#addnum')
         let num = document.querySelector('#num')
         let telavet = document.querySelector('#mostrar')
         valor = []
@@ -18,17 +18,17 @@ let telanum = document.querySelector('#addnum')
     }
     function adicionar(){
        if ( numero(num.value) && repetido(num.value, valor)){
-            valor.push(Number(num.value))
-            let item = document.createElement('option')
-            item.text = `Valor ${num.value} adicionado!`
-            telanum.appendChild(item)
-            num.value = ''
-            num.focus()
-        }else{
+                valor.push(Number(num.value))
+                let item = document.createElement('option')
+                item.text = `Valor ${num.value} adicionado!`
+                telanum.appendChild(item)
+                num.value = ''
+                num.focus()
+            }else{
             num.value = ''
             num.focus()
             window. alert ('Digite um valor válido!')
-        }
+            }
     }
     function finalizar(){
             let tela = valor.length
@@ -43,7 +43,6 @@ let telanum = document.querySelector('#addnum')
                     maior = valor[s]
                 if (valor[s] < menor)
                     menor = valor[s]
-                
             }
             telavet.innerHTML = ''
             telavet.innerHTML += `Temos ${tela} posições cadastrados <br>`

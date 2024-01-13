@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteando Numeros</title>
+</head>
+<body>
+    <header>
+        <h1>Sorteia Números</h1>
+        <p>Trabalhando com Arrays</p>
+    </header>
+    <main>
+        <section>
+            <form action="cad.php">
+                <p>
+                    <input type="number" name="sort" id="num" placeholder=" Qtd de nº sorteados">
+                    <input class="btn" type="button" value="Sortear" onclick="sortear()">
+                </p>
+                <h3 id="sorteando"></h3>
+                <div id="res"></div>
+                
+                <input class="btn" type="button" value="Verificar" onclick="verificar()">
+                <div id="tela"></div>
+            </form>
+            
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
