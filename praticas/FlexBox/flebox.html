@@ -71,7 +71,7 @@
         /* Grid Layout*/
         #grid1{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr; /*qtd de colunas*/
             max-width: 780px;
             margin: 0 auto;
             grid-gap: 20px;
@@ -94,6 +94,18 @@
             grid-row: 2 / 5;
             display: block;
             margin: auto;
+        }
+        @media (max-width: 600px) {
+            #grid1{
+                grid-template-columns: 1fr 1fr;
+            }
+            #grid1 > div:nth-child(n + 4){
+                display: block;
+            }
+            #grid1 > div#anuncio{
+                grid-column: auto;
+                grid-row: auto
+            }
         }
         
     </style>
@@ -140,41 +152,41 @@
     <h1>Section Grid Layout</h1>
 
     <section id="grid1">
-        <div>
+        <div class="lobo">
             <img src="lobo1.jpg" alt="Lobo">
-            <p>Lobo 1</p>
+            <p>Lobo 7</p>
         </div>
-        <div>
+        <div class="lobo">
             <img src="lobo2.jpg" alt="Lobo">
-            <p>Lobo 2</p>
+            <p>Lobo 8</p>
         </div>
-        <div>
+        <div class="lobo">
             <img src="lobo3.jpg" alt="Lobo">
-            <p>Lobo 3</p>
+            <p>Lobo 9</p>
         </div>
-        <div>
+        <div class="lobo">
             <img src="lobo4.jpg" alt="Lobo">
-            <p>Lobo 4</p>
+            <p>Lobo 10</p>
         </div>
-        <div>
+        <div class="lobo">
             <img src="lobo5.jpg" alt="Lobo">
-            <p>Lobo 5</p>
+            <p>Lobo 11</p>
         </div>
-        <div>
+        <div class="lobo">
             <img src="lobo6.jpg" alt="Lobo">
-            <p>Lobo 6</p>
+            <p>Lobo 12</p>
         </div>
-        <div>
+        <div class="lobo">
             <img src="lobo3.jpg" alt="Lobo">
-            <p>Lobo 3</p>
+            <p>Lobo 13</p>
         </div>
-        <div>
+        <div class="lobo">
             <img src="lobo4.jpg" alt="Lobo">
-            <p>Lobo 4</p>
+            <p>Lobo 14</p>
         </div>
-        <div>
+        <div class="lobo">
             <img src="lobo5.jpg" alt="Lobo">
-            <p>Lobo 5</p>
+            <p>Lobo 15</p>
         </div>
         <div id="anuncio">
             <img src="lobo6.jpg" alt="Lobo">
