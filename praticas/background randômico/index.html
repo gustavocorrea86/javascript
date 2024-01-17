@@ -38,9 +38,7 @@
         function random(num){
             return Math.floor(Math.random() * (num + 1));
         }
-        
         var rndColor = `rgb(${random(255)}, ${random(255)}, ${random(255)})`
-        document.querySelector('h1#color').style.color = rndColor
         document.querySelector('header').style.backgroundColor = rndColor;
     }
 

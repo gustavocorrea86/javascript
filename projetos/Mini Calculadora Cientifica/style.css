@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: cadetblue;
+    background-image: linear-gradient(to right, cadetblue, white, black);
+}
+h1{
+    text-align: center;
+    color: linear-gradient(to bottom, rgb(19, 126, 19), rgb(124, 63, 63), rgb(219, 196, 196));
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.473);
+    margin-top: 20px;
+}
+section{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 7px;
+    padding-left: 5px;
+    width: 297px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.363);
+}
+#tela{
+    margin: 7px;
+    width: 275px;
+    height: 120px;
+    background-color: lightgray;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#enter{
+    margin-left: 4px;
+    width: 108.5px;
+    height: 40px;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#enter:hover{
+    border: 2px solid cadetblue;
+}
+.linha1{
+    margin-left: 4px;
+    width: 50px;
+    height: 40px;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;   
+   
+}
+.linha1:hover{
+    border: 2px solid cadetblue;
+}
+.linha2{
+    margin-left: 4px;
+    margin-top: 7px;
+    width: 50px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;  
+}
+.linha2:hover{
+    border: 2px solid cadetblue;
+}
+.linha3{
+    margin-top: 10px;
+    margin-left: 4px;
+    width: 50px;
+    height: 90px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;  
+}
+.linha3:hover{
+    border: 2px solid cadetblue;
+}
+#ajuste1{
+    display: flex;
+    position: absolute;
+    left: 78.5%;
+    top: 69.7%; 
+}
+#ajuste2{
+    position: absolute;
+    left: 59%;
+    top: 69.7%;
+}    

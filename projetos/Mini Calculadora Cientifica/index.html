@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Científica</title>
+</head>
+<body>
+    <header>
+        <h1>Mini Calculadora Científica</h1>
+    </header>
+    <main>
+        <section>
+                <div id="tela">
+                </div>
+                <div>
+                    <!--<input type="button" value="Magic Color" id="enter" onclick="magic()">-->
+                    <button class="linha1" id="enter" onclick="magicColor()">Magic Color</button>
+                    <button class="linha1" id="" onclick="porcentagem()">%</button>
+                    <input type="button" value="/" class="linha1" id="divisao" onclick="divisao()">
+                    <input type="button" value="CE" class="linha1" id="limpa" onclick="limpa()">
+                </div>
+
+                <div>
+                    <input type="button" value="1" class="linha2" id="um" onclick="um()">
+                    <input type="button" value="2" class="linha2" id="dois" onclick="dois()">
+                    <input type="button" value="3" class="linha2" id="tres" onclick="tres()">
+                    <input type="button" value="X" class="linha1" id="multiplicacao" onclick="multiplicacao()">
+                    <input type="button" value="Black" class="linha1" id="black" onclick="black()">
+                </div>
+
+                <div>
+                    <input type="button" value="4" class="linha2" id="quatro" onclick="quatro()">
+                    <input type="button" value="5" class="linha2" id="cinco" onclick="cinco()">
+                    <input type="button" value="6" class="linha2" id="seis" onclick="seis()">
+                    <input type="button" value="-" class="linha1" id="subtracao" onclick="subtracao()">
+                    <input type="button" value="White" class="linha1" id="white" onclick="white()">
+                </div>
+
+                <div>
+                    <input type="button" value="7" class="linha2" id="sete" onclick="sete()">
+                    <input type="button" value="8" class="linha2" id="oito" onclick="oito()">
+                    <input type="button" value="9" class="linha2" id="nove" onclick="nove()">
+                    
+                </div>
+                <div>
+                    <input type="button" value="0" class="linha2" id="zero" onclick="zero()">
+                    <input type="button" value="00" class="linha2" id="zerozero" onclick="zerozero()">
+                    <input type="button" value="." class="linha2" id="ponto" onclick="ponto()">
+                </div>
+                <div id="ajuste1">
+                    <input type="button" value="+"class="linha3" id="adicao" onclick="adicao()">
+                </div>
+                <div id="ajuste2">
+                    <input type="button" value="ENTER" class="linha3" id="igual" onclick="enter()">
+                </div>
+        </section>
+    </main>
+</body>
+<script src="script.js">
+    
+</script>
+</html>
