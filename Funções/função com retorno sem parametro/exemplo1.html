@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo prático 1 - funções com retorno e sem parametro</title>
+    <style>
+        .box{
+            display: flex;
+        }
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .div2{
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .div3{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        .div4{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+    </div>
+</body>
+<script>
+    const div1 = document.querySelector('.div1')
+    const div2 = document.querySelector('.div2')
+    const div3 = document.querySelector('.div3')
+    const div4 = document.querySelector('.div4')
+
+    function mudaCor(){
+        return 'green'
+    }
+    function mudaCor1(){
+            return 'red'
+        }
+    div2.addEventListener('click', ()=>{
+        div3.style.backgroundColor = mudaCor()
+
+        div3.addEventListener('click', ()=>{
+            div4.style.backgroundColor = mudaCor1()
+        })
+    })
+   
+</script>
+</html>

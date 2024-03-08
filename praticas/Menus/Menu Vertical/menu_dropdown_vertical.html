@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dropdown Vertical</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body{
+        height: 100%;
+        background-image: url(imagens/background1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header{
+        height: 100vh;
+        width: 150px;
+        display: flex;
+    }
+    nav{
+        background-color: rgba(0, 0, 0, 0.705);
+        width: 150px;
+    }
+    .logo{
+        text-align: center;
+        padding: 20px;
+    }
+    .menu li{
+        width: 150px;
+        padding: 10px;
+        background-color: rgba(255, 99, 71, 0.616);
+        cursor: pointer;
+        margin: 2px 0px;
+        text-align: justify;
+    }
+    .menu li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        text-shadow: 2px 2px black;
+    }
+    .menu li:hover{
+        background-image: linear-gradient(to right, red, tomato,white);
+       
+    }
+     /*----------------Classe Produtos----------------------*/
+     .produtos{
+        position: relative;
+     }
+     .subProdutos{
+        position: absolute;
+        left: 100%;
+        top: 0%;
+        display: none;
+     }
+     .produtos:hover .subProdutos{
+        display: block;
+     }
+     /*----------------Produtos 1----------------------*/
+     .produto1{
+        position: relative;
+     }
+    .subProduto1{
+        position: absolute;
+        left: 100%;
+        top: 0%;
+        display: none;
+    }
+    .produto1:hover .subProduto1{
+        display: block;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <!--<h1 class="logo">Logo</h1>-->
+
+            <div class="logo"><img src="imagens/logo java.png" alt=""></div>
+            <ul class="menu">
+
+                <div class="produtos">
+                    <li><a href="#">Produtos▸</a></li>
+                    <div class="subProdutos">
+
+                        <div class="produto1">
+                            <li><a href="#">Produto 1▸</a></li>
+                            <div class="subProduto1">
+                                <li><a href="#">Calças</a></li>
+                                <li><a href="#">Camisas</a></li>
+                                <li><a href="#">Blusas</a></li>
+                                <li><a href="#">Bermudas</a></li>
+                            </div>
+                        </div>
+                        <li><a href="#">Produto 2</a></li>
+                        <li><a href="#">Produto 3</a></li>
+                    </div>
+                </div>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Lojas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

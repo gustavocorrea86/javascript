@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dropdown Horizontal</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        list-style: none;
+    }
+    /*----------------menu----------------------*/
+    body{
+        height: 100vh;
+        background-image: url(imagens/background1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    nav{
+        width: 100%;
+        min-height: 100px;
+        background-color: rgba(0, 0, 0, 0.603);
+        display: flex;
+    }
+    nav .logo{
+        color: white;
+        padding: 20px;
+    }
+    .menu{
+        width: 100%;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: end;
+    }
+    .menu li{
+        text-decoration: none;
+        padding: 5px;
+        width: 110px;
+        border-radius: 5px 5px 0px 0px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .menu li a{
+        color: white;
+        text-decoration: none;
+    }
+    .menu li:hover{
+        background-color: rgba(65, 105, 225, 0.548);
+    }
+    
+    
+    /*---------------- Classe Produtos ----------------------*/
+    .produtos{
+        position: relative;
+    }
+    .subProdutos{
+        background-color: rgba(0, 0, 0, 0.500);
+        width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        display: none;
+    } 
+    .subProdutos a{
+        display: flex;
+        justify-content: center;
+        width: 110px;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .subProdutos a:hover{
+        background-color: rgba(65, 105, 225, 0.548);
+        color: white;
+    }
+    .produtos:hover .subProdutos{
+        display: flex;
+    }
+    /*---------------- Produto 1 ----------------------*/
+    .produto1{
+        display: flex;
+        position: relative;
+    }
+    .subProduto1{
+        background-color: rgba(0, 0, 0, 0.500);
+        width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        display: none;
+    }
+    .produto1:hover .subProduto1{
+        display: flex;
+    }
+     /*---------------- Calças ----------------------*/
+     .calcas{
+        position: relative;
+        display: flex;
+     }
+    .subCalcas{
+        background-color: rgba(0, 0, 0, 0.500);
+        width: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        display: none;
+    }
+    .calcas:hover .subCalcas{
+        display: flex;
+    }
+    /*---------------- Serviços ----------------------*/
+    .servicos{
+        position: relative;
+    }
+    .subServicos{
+        background-color: black;
+        width: 110px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        opacity: .6;
+        display: none;
+    }
+    .subServicos a{
+        display: flex;
+        justify-content: center;
+        width: 110px;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .servicos:hover .subServicos{
+        display: flex;
+    }
+    /*---------------- Serviços 1 ----------------------*/
+</style>
+<body>
+    <header>
+        <nav>
+        <h1 class="logo">Logo</h1>
+           <ul class="menu">
+                <div class="produtos">
+                    <li><a href="#">Produtos▾</a></li>
+                        <div class="subProdutos">
+
+                                <div class="produto1">
+                                    <a href="#"class="produto1">Produto 1▸</a>
+                                    <div class="subProduto1">
+
+                                        <div class="calcas">
+                                            <a href="#">Calças▸</a>
+                                            <div class="subCalcas">
+                                                <a href="#">Jeans</a>
+                                                <a href="#">Capri</a>
+                                                <a href="#">Skinis</a>
+                                                <a href="#">Algodão</a>
+                                            </div>
+                                        
+                                        </div>
+                                        <a href="#">Blusas</a>
+                                        <a href="#">Camisas</a>
+                                        <a href="#">Sapatos</a>
+                                    </div>
+                                </div>
+
+                            <a href="#">Produto 2▸</a>
+                            <a href="#">Produto 3▸</a>
+                            <a href="#">Produto 4▸</a>
+                        </div>
+                </div>
+                
+                <div class="servicos">
+                    <li><a href="#">Serviços▾</a></li>
+                    <div class="subServicos">
+                        <a href="#">Serviço 1▸</a>
+                        <a href="#">Serviço 2</a>
+                        <a href="#">Serviço 3</a>
+                        <a href="#">Serviço 4</a>
+                    </div>
+                </div>
+
+                <li><a href="#">Lojas</a></li>
+                <li><a href="#">Contato</a></li>
+           </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
