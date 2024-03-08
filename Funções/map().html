@@ -5,12 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praticando o Metodo Map()</title>
 </head>
+<style>
+    *{
+        margin: 0px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: royalblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        background-image: linear-gradient(to left, red, blue, green);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width: 600px){
+            flex-wrap: wrap;
+        }
+    }
+    .container div{
+        width: 150px;
+        height:200px;
+        background-color: white;
+        margin: 5px;
+    }
+</style>
 <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
+<script>
+    let vet = document.querySelectorAll('div')
+
+    vet = [...vet]
+    vet.map((el, i)=>{
+        console.log(el, i)
+    })
+</script>
 </html>
