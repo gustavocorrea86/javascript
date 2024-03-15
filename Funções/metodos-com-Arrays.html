@@ -46,18 +46,16 @@
     <div class="testeMap"></div>
 </body>
 <script>
-   
-    
+    //============= MAP ====================
     let vet = [...document.querySelectorAll('div')]
     vet.map((el, i)=>{
         console.log(el, i)
         vet[3].style.backgroundColor = 'red'
     })
-
+    // operações com arrays
     const testeMap = document.querySelector('.testeMap')
     const testMap = [2,3,4,6];
-    let res = testMap.map((el => el*2))
-
+    const res = testMap.map((el => el*2))
     testeMap.innerHTML = res
    
 
