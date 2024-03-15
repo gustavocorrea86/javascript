@@ -35,29 +35,49 @@
     }
 </style>
 <body>
-    <div class="container">
+    <section class="container">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
         <div></div>
         <div></div>
-    </div>
-    <div class="testeMap"></div>
+        
+    </secion>
+    <p class="testeMap"></p>
 </body>
 <script>
     //============= MAP ====================
-    let vet = [...document.querySelectorAll('div')]
-    vet.map((el, i)=>{
-        console.log(el, i)
-        vet[3].style.backgroundColor = 'red'
-    })
-    // operações com arrays
     const testeMap = document.querySelector('.testeMap')
-    const testMap = [2,3,4,6];
-    const res = testMap.map((el => el*2))
-    testeMap.innerHTML = res
-   
+    let vet = [...document.querySelectorAll('div')];
+    // vet.map((el)=>{
+    //     el.innerHTML = 'teste'
+    // });
 
+    //============== operações com arrays==================
+    // const testMap = [2,3,4,6];
+    // const res = testMap.map((el => el*2));
+    // testeMap.innerHTML = res;
+    //============== operações com arrays==================
+
+    let myHTML = '<ul>'
+    const numbersList = [1, 2, 3, 4, 5];
+    numbersList.forEach(number => myHTML += `<li>${number}</li>` );
+    myHTML += '</ul>';
+
+    vet.map((el)=>{
+        el.innerHTML = myHTML
+    });
+    const dayWeek = ['domingo','segunda','terca','quarta','quinta','sexta','sabado']
+    dayWeek.map((el)=>{
+        console.log(el)
+    })
+   
+           
+        
+
+    
+
+   
 </script>
 </html>
