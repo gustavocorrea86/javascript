@@ -48,11 +48,13 @@
 </body>
 <script>
     //============= MAP ====================
-    const testeMap = document.querySelector('.testeMap')
+    const testeMap = document.querySelector('.testeMap');
     let vet = [...document.querySelectorAll('div')];
-    // vet.map((el)=>{
-    //     el.innerHTML = 'teste'
-    // });
+    const dayWeek = ['domingo','segunda','terca','quarta','quinta','sexta','sabado'];
+    vet.map((el)=>{
+        
+    })
+    
 
     //============== operações com arrays==================
     // const testMap = [2,3,4,6];
@@ -62,22 +64,14 @@
 
     let myHTML = '<ul>'
     const numbersList = [1, 2, 3, 4, 5];
-    numbersList.forEach(number => myHTML += `<li>${number}</li>` );
+    numbersList.forEach(number => myHTML += `<li>${number}</li>`);
     myHTML += '</ul>';
+    testeMap.innerHTML = myHTML
 
-    vet.map((el)=>{
-        el.innerHTML = myHTML
-    });
-    const dayWeek = ['domingo','segunda','terca','quarta','quinta','sexta','sabado']
-    dayWeek.map((el)=>{
-        console.log(el)
-    })
-   
-           
-        
+    // vet.map((el)=>{
+    //     dayWeek.forEach(day => el += day)
+    //     console.log(el)
+    // })
 
-    
-
-   
 </script>
 </html>
