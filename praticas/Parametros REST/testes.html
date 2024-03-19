@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>addd</button>
+</body>
+<script>
+let number = document.querySelector('input');
+let btn = document.querySelector('button');
+    function somar(...valores){
+        const tot = valores.reduce((total, valores) => total + valores,0);
+        console.log(tot)
+        // resultado 30
+    }
+    var n1 = 10
+    var n2 = 20
+   somar(n1, n2)
+   let arr = []
+   btn.addEventListener('click', ()=>{
+    arr.push(number.value);
+    number.value = ''
+    mult(...arr)
+   })
+
+   console.log(arr)
+    
+    function mult(...valores){
+        console.log(valores)
+        valores.map((el,i)=>{ 
+            var tot = el * i
+            // console.log(tot)
+        // resultado 20, 40, 60
+        })
+    }
+    
+
+    
+   
+  
+
+</script>
+</html>
