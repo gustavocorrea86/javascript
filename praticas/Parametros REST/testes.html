@@ -20,6 +20,8 @@ let btn = document.querySelector('button');
     var n1 = 10
     var n2 = 20
    somar(n1, n2)
+
+
    let arr = []
    btn.addEventListener('click', ()=>{
     arr.push(number.value);
@@ -27,21 +29,14 @@ let btn = document.querySelector('button');
     mult(...arr)
    })
 
-   console.log(arr)
-    
+    var tot = 0
     function mult(...valores){
         console.log(valores)
-        valores.map((el,i)=>{ 
-            var tot = el * i
-            // console.log(tot)
+        tot = valores.map(el=> el / 2)
+            console.log(tot)
         // resultado 20, 40, 60
-        })
+        
     }
-    
-
-    
-   
   
-
 </script>
 </html>
